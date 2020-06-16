@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title Here</title>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/light-bootstrap.css" rel="stylesheet" />
+  </head>
+
+  <body class="landing-page">
+    <nav class="navbar navbar-expand-lg navbar-transparent" color-on-scroll="500">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          Title Here
+        </a>
+        <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar burger-lines"></span>
+          <span class="navbar-toggler-bar burger-lines"></span>
+          <span class="navbar-toggler-bar burger-lines"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../examples/dashboard.html">Back to Dashboard</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <%= yield %>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <nav>
+          <ul class="footer-menu">
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Company
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-center">
+            ©2020 MyCompany.com
+          </p>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
